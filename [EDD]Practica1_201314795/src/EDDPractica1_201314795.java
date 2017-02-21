@@ -17,8 +17,11 @@ public class EDDPractica1_201314795 {
         ListaUsuario Usuario = new ListaUsuario();
         ListaPalabras Palabra = new ListaPalabras();
         ListaFichaJug fichaju = new ListaFichaJug();
+        Panel1 p2 = new Panel1();
         ColaFichas fichas = new ColaFichas();
         boolean eliminado = false;
+        p2.setVisible(true);
+
         Usuario.insertarUsuario("Jorge");
         Usuario.insertarUsuario("Billy");
         Usuario.insertarUsuario("Ochoa");
@@ -36,6 +39,8 @@ public class EDDPractica1_201314795 {
         Palabra.AgregarFinal("amor");
         Palabra.mostrarLista();
         System.out.println();
+        System.out.println(Palabra.buscar("pez"));
+        System.out.println(Palabra.buscar("amor"));
 
         fichaju.AgregarFinalFicha("A");
         fichaju.AgregarFinalFicha("B");
@@ -46,14 +51,14 @@ public class EDDPractica1_201314795 {
         if (!fichaju.VaciaFicha()) {
             fichaju.eliminarFicha("B");
             fichaju.mostrarListaFicha();
-        System.out.println();
+            System.out.println();
         }
 
         System.out.println("Hoal");
         fichas.insertarFichas("A");
-        fichas.insertarFichas("E");
-        fichas.insertarFichas("D");
-        fichas.insertarFichas("C");
+        fichas.insertarFichas("R");
+        fichas.insertarFichas("T");
+        fichas.insertarFichas("J");
         fichas.mostarColaFicha();
         System.out.println();
         if (!fichas.Vacia()) {
@@ -63,7 +68,6 @@ public class EDDPractica1_201314795 {
             fichas.QuitarFicha();
             fichas.mostarColaFicha();
         }
-
 // TODO code application logic here
     }
 

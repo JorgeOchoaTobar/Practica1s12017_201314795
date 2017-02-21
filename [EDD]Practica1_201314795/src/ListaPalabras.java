@@ -50,4 +50,15 @@ public class ListaPalabras {
         }
     }
     
+    public boolean buscar(String pal){
+     NodoPalabra actual = inicio;
+        boolean busca = false;
+        while (actual.sig != null && !busca) {
+            busca = (actual.sig.Palabra == pal);
+            if (!busca) {
+                actual = actual.sig;
+            }
+        }
+        return busca;
+    }    
 }
