@@ -14,13 +14,15 @@ public class EDDPractica1_201314795 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Bienvenida b = new Bienvenida();
+        b.setVisible(true);
+        
         ListaUsuario Usuario = new ListaUsuario();
         ListaPalabras Palabra = new ListaPalabras();
         ListaFichaJug fichaju = new ListaFichaJug();
-        Panel1 p2 = new Panel1();
+        
         ColaFichas fichas = new ColaFichas();
         boolean eliminado = false;
-        p2.setVisible(true);
 
         Usuario.insertarUsuario("Jorge");
         Usuario.insertarUsuario("Billy");
